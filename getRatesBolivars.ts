@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-export async function getDollarPrice(rate: string): Promise<string> {
+export async function getRatesBolivars(rate: string): Promise<string> {
     const browser = await puppeteer.launch({
         headless: true, // También puedes probar con false
         args: ['--no-sandbox', '--disable-setuid-sandbox'],
@@ -28,7 +28,7 @@ export async function getDollarPrice(rate: string): Promise<string> {
         };
 
         const rows = Array.from(document.querySelectorAll('tr'));
-        const targetRow = rows.find((row) => row.textContent?.includes(rates['dolarbcv']));
+        const targetRow = rows.find((row) => row.textContent?.includes(rates[rate]));
 
         if (targetRow) {
             const value = targetRow.querySelectorAll('td')[1];
