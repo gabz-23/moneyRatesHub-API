@@ -21,7 +21,7 @@ plataformas que se pueden consultar.
 
 El consumo de la API se realiza mediante una peticion GET a la siguiente URL:
 
-`https://moneyrateshub-api.fly.dev/v1/tasa?dolar=dolarbcv`
+`https://moneyrateshub-api.fly.dev/api/v1/tasa?dolar=dolarbcv`
 
 La query de la peticion debe tener el nombre de la plataforma que se desea consultar. tal y
 como se muestra en la tabla de arriba.
