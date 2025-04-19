@@ -4,6 +4,8 @@ La API esta desarrollada para obtener las tasas en bolivares de dolares en disti
 plataformas de comercio electronico. En la documentacion se encuentra la informacion de las
 plataformas que se pueden consultar.
 
+[Sitio deplegado](https://moneyrateshub-api.fly.dev/)
+
 ## Plataformas
 
 | Plataforma     | Query         |
